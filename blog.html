@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog – STACKLY AI Solutions & Automation Insights</title>
+  <meta name="description" content="Explore the latest AI insights, trends, machine learning breakthroughs, and automation strategies from the STACKLY expert team.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Navigation Header
+       ========================================================================= -->
+  <header class="header-wrapper">
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="brand-logo" aria-label="STACKLY Home">
+        <img src="assets/images/Logo.webp" alt="STACKLY" class="brand-logo-img">
+      </a>
+      <div class="nav-pill-group">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Service</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <a href="login.html" class="btn-get-started">Login</a>
+      <button class="menu-toggle" aria-label="Toggle menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </nav>
+  </header>
+
+  <!-- =========================================================================
+       Section 1: Blog Hero Banner
+       ========================================================================= -->
+  <section class="blog-hero" id="blog-hero">
+    <div class="blog-hero-bg">
+      <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1600&q=80&auto=format&fit=crop&fm=webp" alt="AI Neural Network Visualization" class="blog-hero-bg-img">
+      <div class="blog-hero-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="blog-hero-content" data-animate="fade-up">
+        <div class="section-tag-light">// STACKLY Insights</div>
+        <h1 class="blog-hero-title">The Future of AI<br><span class="gradient-text-accent">Starts Here</span></h1>
+        <p class="blog-hero-desc">Explore cutting-edge insights, machine learning breakthroughs, and automation strategies crafted by the STACKLY expert team.</p>
+        <div class="blog-hero-search">
+          <input type="text" id="blog-search-input" placeholder="Search articles, topics…" class="search-input">
+          <button class="search-btn" id="blog-search-btn">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </button>
+        </div>
+        <div class="blog-hero-stats">
+          <div class="hero-stat-item">
+            <span class="hero-stat-num animate-counter" data-target="240" data-suffix="+">0+</span>
+            <span class="hero-stat-label">Articles</span>
+          </div>
+          <div class="hero-stat-sep"></div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-num animate-counter" data-target="50" data-suffix="k+">0k+</span>
+            <span class="hero-stat-label">Monthly Readers</span>
+          </div>
+          <div class="hero-stat-sep"></div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-num animate-counter" data-target="18" data-suffix="+">0+</span>
+            <span class="hero-stat-label">Expert Authors</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 2: Featured / Hero Article
+       ========================================================================= -->
+  <section class="blog-featured-section" id="featured">
+    <div class="container">
+      <div class="section-label-row" data-animate="fade-up">
+        <div class="section-tag">// Featured Article</div>
+        <a href="#" class="view-all-link">View All Articles ↗</a>
+      </div>
+
+      <div class="featured-article-card" data-animate="scale-up">
+        <div class="featured-img-wrap">
+          <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=900&q=80&auto=format&fit=crop&fm=webp" alt="AI Generative Models Future" class="featured-img">
+          <div class="featured-category-badge">Machine Learning</div>
+        </div>
+        <div class="featured-article-body">
+          <div class="article-meta">
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=80&q=80&fm=webp" alt="Author" class="article-author-img">
+            <div>
+              <span class="article-author-name">Dr. Arjun Mehta</span>
+              <span class="article-date">October 10, 2026 · 12 min read</span>
+            </div>
+          </div>
+          <h2 class="featured-article-title">How Generative AI is Rewriting the Rules of Enterprise Automation in 2026</h2>
+          <p class="featured-article-excerpt">From LLM-powered decision engines to vision transformers driving predictive analytics, we explore the seismic shift generative AI is bringing to enterprise workflows worldwide — and why businesses that hesitate risk irreversible disruption.</p>
+          <div class="article-tags">
+            <span class="article-tag">LLM</span>
+            <span class="article-tag">Automation</span>
+            <span class="article-tag">Enterprise AI</span>
+            <span class="article-tag">Vision Transformers</span>
+          </div>
+          <a href="#" class="btn-pill-dark featured-read-btn">
+            <span>Read Full Article</span>
+            <span class="btn-arrow">▶</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 3: Category Filter Tabs + Blog Cards Grid
+       ========================================================================= -->
+  <section class="blog-categories-section" id="categories">
+    <div class="container">
+      <div class="categories-header" data-animate="fade-up">
+        <h2 class="categories-title">Explore by Topic</h2>
+        <p class="categories-subtitle">Deep dives into the trends reshaping artificial intelligence</p>
+      </div>
+
+      <div class="category-tabs" data-animate="fade-up">
+        <button class="cat-tab active" data-cat="all" id="cat-all">All Posts</button>
+        <button class="cat-tab" data-cat="ml" id="cat-ml">Machine Learning</button>
+        <button class="cat-tab" data-cat="automation" id="cat-automation">Automation</button>
+        <button class="cat-tab" data-cat="nlp" id="cat-nlp">NLP &amp; LLMs</button>
+        <button class="cat-tab" data-cat="robotics" id="cat-robotics">Robotics</button>
+        <button class="cat-tab" data-cat="cloud" id="cat-cloud">Cloud AI</button>
+      </div>
+
+      <div class="blog-cards-grid" id="blog-cards-grid">
+        <article class="blog-card" data-animate="fade-up" data-cat="ml">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=600&q=80&auto=format&fit=crop&fm=webp" alt="Neural Networks Visualized" class="blog-card-img">
+            <span class="blog-card-category">Machine Learning</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Oct 08, 2026</span><span class="blog-dot">·</span><span>9 min read</span></div>
+            <h3 class="blog-card-title">Neural Architecture Search: Building Self-Designing AI Networks</h3>
+            <p class="blog-card-excerpt">NAS algorithms are evolving to design neural networks that outperform human-crafted architectures in precision and efficiency.</p>
+            <a href="#" class="blog-read-more">Read More ↗</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-animate="fade-up" data-cat="automation">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&q=80&auto=format&fit=crop&fm=webp" alt="AI Robotic Automation" class="blog-card-img">
+            <span class="blog-card-category">Automation</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Oct 05, 2026</span><span class="blog-dot">·</span><span>7 min read</span></div>
+            <h3 class="blog-card-title">RPA 3.0: When Robotic Process Automation Meets Cognitive Intelligence</h3>
+            <p class="blog-card-excerpt">The next wave of RPA incorporates contextual reasoning, giving bots the ability to handle exceptions and ambiguous workflows.</p>
+            <a href="#" class="blog-read-more">Read More ↗</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-animate="fade-up" data-cat="nlp">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1655635643532-fa9ba2648cbe?w=600&q=80&auto=format&fit=crop&fm=webp" alt="Language Model Interface" class="blog-card-img">
+            <span class="blog-card-category">NLP &amp; LLMs</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Sep 29, 2026</span><span class="blog-dot">·</span><span>11 min read</span></div>
+            <h3 class="blog-card-title">Prompt Engineering at Scale: Strategies for Enterprise LLM Deployments</h3>
+            <p class="blog-card-excerpt">Systematic prompt architectures, chain-of-thought reasoning, and retrieval-augmented generation for production AI systems.</p>
+            <a href="#" class="blog-read-more">Read More ↗</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-animate="fade-up" data-cat="robotics">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?w=600&q=80&auto=format&fit=crop&fm=webp" alt="Advanced Robotics Lab" class="blog-card-img">
+            <span class="blog-card-category">Robotics</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Sep 22, 2026</span><span class="blog-dot">·</span><span>8 min read</span></div>
+            <h3 class="blog-card-title">Bipedal Robots in Industrial Settings: Safety, Dexterity, and Real-Time Learning</h3>
+            <p class="blog-card-excerpt">How reinforcement learning is enabling the next generation of humanoid robots to operate safely alongside human workers.</p>
+            <a href="#" class="blog-read-more">Read More ↗</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-animate="fade-up" data-cat="cloud">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&q=80&auto=format&fit=crop&fm=webp" alt="Cloud AI Infrastructure" class="blog-card-img">
+            <span class="blog-card-category">Cloud AI</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Sep 18, 2026</span><span class="blog-dot">·</span><span>10 min read</span></div>
+            <h3 class="blog-card-title">Serverless AI: Running Billion-Parameter Models Without Breaking the Bank</h3>
+            <p class="blog-card-excerpt">Techniques for cost-effective inference at scale — from quantization to dynamic batching and edge offloading strategies.</p>
+            <a href="#" class="blog-read-more">Read More ↗</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-animate="fade-up" data-cat="ml">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&q=80&auto=format&fit=crop&fm=webp" alt="AI Data Science" class="blog-card-img">
+            <span class="blog-card-category">Machine Learning</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Sep 12, 2026</span><span class="blog-dot">·</span><span>6 min read</span></div>
+            <h3 class="blog-card-title">Federated Learning: Training AI on Sensitive Data Without Exposure</h3>
+            <p class="blog-card-excerpt">Privacy-preserving training techniques that allow hospitals, banks, and governments to collaborate on shared AI models.</p>
+            <a href="#" class="blog-read-more">Read More ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="load-more-wrap" data-animate="fade-up">
+        <button class="btn-load-more" id="btn-load-more">Load More Articles</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 4: Trending Topics Marquee
+       ========================================================================= -->
+  <div class="marquee-container coral-ribbon" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-item">
+        <span>Generative AI</span><span class="marquee-divider">/</span>
+        <span>Large Language Models</span><span class="marquee-divider">/</span>
+        <span>Neural Architecture Search</span><span class="marquee-divider">/</span>
+        <span>Autonomous Agents</span><span class="marquee-divider">/</span>
+        <span>Vision Transformers</span><span class="marquee-divider">/</span>
+        <span>Edge Computing AI</span><span class="marquee-divider">/</span>
+      </div>
+      <div class="marquee-item">
+        <span>Generative AI</span><span class="marquee-divider">/</span>
+        <span>Large Language Models</span><span class="marquee-divider">/</span>
+        <span>Neural Architecture Search</span><span class="marquee-divider">/</span>
+        <span>Autonomous Agents</span><span class="marquee-divider">/</span>
+        <span>Vision Transformers</span><span class="marquee-divider">/</span>
+        <span>Edge Computing AI</span><span class="marquee-divider">/</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       Section 5: Editor's Picks Bento Layout
+       ========================================================================= -->
+  <section class="editors-picks-section" id="editors-picks">
+    <div class="container">
+      <div class="section-label-row" data-animate="fade-up">
+        <div class="section-tag">// Editor's Picks</div>
+        <h2 class="editors-picks-title">Must-Read Deep Dives</h2>
+      </div>
+
+      <div class="editors-picks-grid">
+        <div class="pick-card pick-card-large" data-animate="fade-left">
+          <img src="https://images.unsplash.com/photo-1676299081847-824916de030a?w=800&q=80&auto=format&fit=crop&fm=webp" alt="AI Ethics and Society" class="pick-card-img">
+          <div class="pick-card-overlay">
+            <span class="pick-badge">Ethics</span>
+            <h3 class="pick-title">The Alignment Problem: Why Making AI Safe Is Humanity's Most Urgent Challenge</h3>
+            <p class="pick-excerpt">As AI systems grow more capable, ensuring their goals align with human values becomes exponentially more complex — and critical.</p>
+            <div class="pick-meta">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&q=80&fm=webp" alt="Author" class="pick-author-img">
+              <span>Priya Sharma · Oct 01, 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pick-card pick-card-small" data-animate="fade-up">
+          <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=600&q=80&auto=format&fit=crop&fm=webp" alt="AI Chip Hardware" class="pick-card-img">
+          <div class="pick-card-overlay">
+            <span class="pick-badge">Hardware</span>
+            <h3 class="pick-title">Custom Silicon: Why Every AI Giant Is Building Their Own Chips</h3>
+            <div class="pick-meta">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&q=80&fm=webp" alt="Author" class="pick-author-img">
+              <span>Kenji Tanaka · Sep 28, 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pick-card pick-card-small" data-animate="fade-up">
+          <img src="https://images.unsplash.com/photo-1488229297570-58520851e868?w=600&q=80&auto=format&fit=crop&fm=webp" alt="Data Privacy AI" class="pick-card-img">
+          <div class="pick-card-overlay">
+            <span class="pick-badge">Privacy</span>
+            <h3 class="pick-title">Differential Privacy: Teaching AI to Forget Sensitive Training Data</h3>
+            <div class="pick-meta">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&q=80&fm=webp" alt="Author" class="pick-author-img">
+              <span>Elena Morosova · Sep 20, 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 6: Stats Counter Bar
+       ========================================================================= -->
+  <section class="blog-stats-section" id="blog-stats">
+    <div class="container">
+      <div class="blog-stats-box" data-animate="scale-up">
+        <div class="blog-stat-item" data-animate="fade-up">
+          <div class="blog-stat-icon">✦</div>
+          <div class="blog-stat-num animate-counter" data-target="240" data-suffix="+">0+</div>
+          <div class="blog-stat-label">Research Articles Published</div>
+        </div>
+        <div class="blog-stats-divider"></div>
+        <div class="blog-stat-item" data-animate="fade-up">
+          <div class="blog-stat-icon">◈</div>
+          <div class="blog-stat-num animate-counter" data-target="50" data-suffix="k+">0k+</div>
+          <div class="blog-stat-label">Monthly Active Readers</div>
+        </div>
+        <div class="blog-stats-divider"></div>
+        <div class="blog-stat-item" data-animate="fade-up">
+          <div class="blog-stat-icon">◉</div>
+          <div class="blog-stat-num animate-counter" data-target="18" data-suffix="+">0+</div>
+          <div class="blog-stat-label">Expert Contributors</div>
+        </div>
+        <div class="blog-stats-divider"></div>
+        <div class="blog-stat-item" data-animate="fade-up">
+          <div class="blog-stat-icon">⬡</div>
+          <div class="blog-stat-num animate-counter" data-target="12" data-suffix="+">0+</div>
+          <div class="blog-stat-label">Industry Awards Won</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 7: Video Feature Article
+       ========================================================================= -->
+  <section class="blog-video-section" id="blog-video">
+    <div class="container">
+      <div class="blog-video-grid" data-animate="scale-up">
+        <div class="blog-video-left" data-animate="fade-right">
+          <div class="section-tag" style="color:#64748b">// Video Feature</div>
+          <h2 class="blog-video-title">Watch: Inside STACKLY's AI Research Lab – Building Tomorrow's Intelligence</h2>
+          <p class="blog-video-desc">Get an exclusive behind-the-scenes look at how our research engineers train multimodal AI systems capable of reasoning across text, vision, and structured data simultaneously.</p>
+          <div class="blog-video-tags">
+            <span class="article-tag">Research</span>
+            <span class="article-tag">Multimodal AI</span>
+            <span class="article-tag">Lab Tour</span>
+          </div>
+          <div class="blog-video-meta">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&q=80&fm=webp" alt="Author" class="article-author-img">
+            <div>
+              <span class="article-author-name">Rohan Venkatesan</span>
+              <span class="article-date">Oct 12, 2026 · 18 min watch</span>
+            </div>
+          </div>
+          <a href="#" class="btn-pill-dark" style="margin-top:28px; display:inline-flex; align-items:center; gap:8px;">
+            <span>Watch Video</span><span class="btn-arrow">▶</span>
+          </a>
+        </div>
+        <div class="blog-video-right" data-animate="fade-left">
+          <div class="video-thumb-card">
+            <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80&auto=format&fit=crop&fm=webp" alt="AI Research Lab" class="video-thumb-img">
+            <div class="video-thumb-play-btn" id="blog-video-play">
+              <div class="video-play-icon" style="width:64px;height:64px;font-size:22px;">▶</div>
+            </div>
+            <div class="video-thumb-duration">18:24</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 8: Newsletter Subscribe
+       ========================================================================= -->
+  <section class="newsletter-section" id="blog-newsletter">
+    <div class="container">
+      <div class="newsletter-banner" data-animate="scale-up">
+        <div class="newsletter-left-col">
+          <h2 class="newsletter-title">Never Miss a STACKLY Insight.</h2>
+          <p class="newsletter-desc">Join 50,000+ AI professionals receiving weekly deep dives, curated research papers, and industry news directly in their inbox.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); document.getElementById('blog-sub-msg').style.display='block';">
+            <input type="email" placeholder="Your work email" class="newsletter-input" required>
+            <button type="submit" class="btn-subscribe">SUBSCRIBE</button>
+          </form>
+          <p id="blog-sub-msg" style="display:none; color:#4f46e5; font-weight:700; margin-top:12px;">You're subscribed! Welcome to the STACKLY community.</p>
+        </div>
+        <div class="newsletter-right-col" data-animate="fade-left">
+          <div class="tiles-iso-grid">
+            <div class="iso-tile"><img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=300&q=80&auto=format&fit=crop&fm=webp" alt="AI Visual 1"></div>
+            <div class="iso-tile"><img src="https://images.unsplash.com/photo-1676299081847-824916de030a?w=300&q=80&auto=format&fit=crop&fm=webp" alt="AI Visual 2"></div>
+            <div class="iso-tile"><img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=300&q=80&auto=format&fit=crop&fm=webp" alt="AI Visual 3"></div>
+            <div class="iso-tile"><img src="https://images.unsplash.com/photo-1655635643532-fa9ba2648cbe?w=300&q=80&auto=format&fit=crop&fm=webp" alt="AI Visual 4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Footer
+       ========================================================================= -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/images/Logo.webp" alt="STACKLY" class="footer-brand-logo">
+          <p class="footer-desc">Empowering modern businesses with artificial intelligence, intelligent process automation, and neuro-consulting models.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="#">Robotic Automation</a></li>
+            <li><a href="#">Machine Learning</a></li>
+            <li><a href="#">Algorithm Engineering</a></li>
+            <li><a href="#">Cloud Integration</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-links">
+            <li>stackly@info.in</li>
+            <li>9876543210</li>
+            <li>123 Salem, Tamilnadu, India</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 STACKLY AI Solutions Inc. All rights reserved.</p>
+        <p>Crafted for Next-Gen Autonomous Intelligence</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="video-modal" id="videoModal">
+    <div class="video-modal-content">
+      <button class="video-modal-close" aria-label="Close video modal">&#x2715;</button>
+      <div class="video-wrapper">
+        <iframe id="videoIframe" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

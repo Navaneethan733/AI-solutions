@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard – STACKLY AI Platform</title>
+  <meta name="description" content="STACKLY Enterprise AI Administration Console. Manage distributed GPU clusters, model deployments, tenant security, and system telemetry.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dash-body">
+
+  <div class="dashboard-layout">
+    <main class="dashboard-main">
+
+      <!-- =========================================================================
+           Top Header Bar (No Sidebar)
+           ========================================================================= -->
+      <header class="dash-header">
+        <div class="dash-header-inner">
+          <div class="dash-header-left">
+            <!-- Brand Logo -->
+            <a href="index.html" class="dash-brand-link" aria-label="STACKLY Home">
+              <img src="assets/images/Logo.webp" alt="STACKLY">
+            </a>
+            <div class="dash-divider"></div>
+            <span class="sidebar-role-badge admin" style="position:static; transform:none;">Admin Console</span>
+          </div>
+
+          <div class="dash-header-right">
+            <div class="dash-search-box">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              <input type="text" placeholder="Search clusters, models, orgs..." class="dash-search-input">
+            </div>
+
+            <div class="dash-status-pill">
+              <span class="dash-status-dot"></span>
+              <span>12 GPU Nodes Active</span>
+            </div>
+
+            <a href="user-dashboard.html" class="dash-btn-switch btn-pill-dark">
+              <span>User View</span>
+            </a>
+
+            <a href="login.html" class="dash-btn-signout btn-pill-white">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+              <span>Sign Out</span>
+            </a>
+
+            <button class="dash-icon-btn" aria-label="Notifications">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+              <span class="dash-btn-badge"></span>
+            </button>
+
+            <div class="dash-user-pill">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&q=80&fm=webp" alt="Admin" class="dash-user-img" id="admin-header-avatar">
+              <span class="dash-user-name" id="admin-header-username">Dr. Navin</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Dashboard Body Content -->
+      <div class="dash-content">
+
+        <!-- Page Title -->
+        <div style="margin-bottom: 24px;" data-animate="fade-up">
+          <h1 style="font-size: 22px; font-weight: 800; color: #0f172a; margin: 0 0 4px;">Infrastructure &amp; Cluster Control</h1>
+          <p style="font-size: 13px; color: #64748b; margin: 0;">Real-time telemetry across distributed inference nodes</p>
+        </div>
+
+        <!-- Top 4 Metric Bento Cards -->
+        <div class="dash-metrics-grid" data-animate="fade-up">
+          <div class="dash-metric-card">
+            <div class="dash-mcard-top">
+              <div class="dash-mcard-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+              <span class="dash-mcard-trend">+18.4% &uarr;</span>
+            </div>
+            <div class="dash-mcard-value animate-counter" data-target="148.6" data-suffix="M">0M</div>
+            <div class="dash-mcard-label">Monthly Inferences Served</div>
+          </div>
+
+          <div class="dash-metric-card">
+            <div class="dash-mcard-top">
+              <div class="dash-mcard-icon emerald">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <span class="dash-mcard-trend">+94 new</span>
+            </div>
+            <div class="dash-mcard-value animate-counter" data-target="1420" data-suffix="">0</div>
+            <div class="dash-mcard-label">Active Enterprise Clients</div>
+          </div>
+
+          <div class="dash-metric-card">
+            <div class="dash-mcard-top">
+              <div class="dash-mcard-icon amber">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+              </div>
+              <span class="dash-mcard-trend">Optimal</span>
+            </div>
+            <div class="dash-mcard-value animate-counter" data-target="78.4" data-suffix="%">0%</div>
+            <div class="dash-mcard-label">NVIDIA H100 Cluster Load</div>
+          </div>
+
+          <div class="dash-metric-card">
+            <div class="dash-mcard-top">
+              <div class="dash-mcard-icon coral">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <span class="dash-mcard-trend">+12.8% &uarr;</span>
+            </div>
+            <div class="dash-mcard-value">$<span class="animate-counter" data-target="348.2" data-suffix="k">0k</span></div>
+            <div class="dash-mcard-label">Monthly Recurring Revenue</div>
+          </div>
+        </div>
+
+        <!-- 2-Column: Throughput Telemetry & Cluster Node Monitor -->
+        <div class="dash-grid-2col" data-animate="fade-up">
+
+          <!-- Left: Real-time Throughput Chart Box -->
+          <div class="dash-card">
+            <div class="dash-card-header">
+              <h2 class="dash-card-title">Real-Time Inference Throughput (RPS)</h2>
+              <div class="dash-card-actions">
+                <span class="status-pill success">Live Stream</span>
+              </div>
+            </div>
+            <div class="dash-card-body">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:18px;">
+                <div>
+                  <span style="font-size:28px; font-weight:900; color:#0f172a;">24,850</span>
+                  <span style="font-size:13px; color:#64748b; margin-left:6px;">requests / sec</span>
+                </div>
+                <div style="font-size:12px; color:#10b981; font-weight:700;">Avg Latency: 14.2ms</div>
+              </div>
+
+              <!-- Visual Bar Chart Representation -->
+              <div style="display:flex; align-items:flex-end; gap:8px; height:160px; padding:16px 0; border-bottom:1px solid #f1f5f9;">
+                <div style="flex:1; height:45%; background:rgba(79,70,229,0.2); border-radius:6px;"></div>
+                <div style="flex:1; height:60%; background:rgba(79,70,229,0.3); border-radius:6px;"></div>
+                <div style="flex:1; height:80%; background:rgba(79,70,229,0.5); border-radius:6px;"></div>
+                <div style="flex:1; height:65%; background:rgba(79,70,229,0.35); border-radius:6px;"></div>
+                <div style="flex:1; height:90%; background:linear-gradient(180deg, #4f46e5, #7c3aed); border-radius:6px;"></div>
+                <div style="flex:1; height:75%; background:rgba(79,70,229,0.45); border-radius:6px;"></div>
+                <div style="flex:1; height:85%; background:linear-gradient(180deg, #4f46e5, #7c3aed); border-radius:6px;"></div>
+                <div style="flex:1; height:100%; background:linear-gradient(180deg, #f43f5e, #e11d48); border-radius:6px;"></div>
+                <div style="flex:1; height:70%; background:rgba(79,70,229,0.4); border-radius:6px;"></div>
+                <div style="flex:1; height:88%; background:linear-gradient(180deg, #4f46e5, #7c3aed); border-radius:6px;"></div>
+                <div style="flex:1; height:94%; background:linear-gradient(180deg, #4f46e5, #7c3aed); border-radius:6px;"></div>
+                <div style="flex:1; height:82%; background:rgba(79,70,229,0.5); border-radius:6px;"></div>
+              </div>
+
+              <div style="display:flex; justify-content:space-between; margin-top:14px; font-size:12px; color:#64748b;">
+                <span>00:00 UTC</span>
+                <span>06:00 UTC</span>
+                <span>12:00 UTC</span>
+                <span>18:00 UTC</span>
+                <span>Peak Load</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Cluster Health Nodes Monitor -->
+          <div class="dash-card">
+            <div class="dash-card-header">
+              <h2 class="dash-card-title">Distributed GPU Clusters</h2>
+              <span class="status-pill success">All 4 Healthy</span>
+            </div>
+            <div class="dash-card-body" style="display:flex; flex-direction:column; gap:16px;">
+              
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:13px; font-weight:700; margin-bottom:6px;">
+                  <span>Node 01: US-East (H100-SXM5)</span>
+                  <span style="color:#4f46e5;">82% Load</span>
+                </div>
+                <div style="height:6px; background:#f1f5f9; border-radius:9999px; overflow:hidden;">
+                  <div style="width:82%; height:100%; background:linear-gradient(90deg, #4f46e5, #7c3aed); border-radius:9999px;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:13px; font-weight:700; margin-bottom:6px;">
+                  <span>Node 02: EU-Frankfurt (A100-80G)</span>
+                  <span style="color:#10b981;">64% Load</span>
+                </div>
+                <div style="height:6px; background:#f1f5f9; border-radius:9999px; overflow:hidden;">
+                  <div style="width:64%; height:100%; background:#10b981; border-radius:9999px;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:13px; font-weight:700; margin-bottom:6px;">
+                  <span>Node 03: AP-Singapore (H100-Pod)</span>
+                  <span style="color:#f59e0b;">91% High Load</span>
+                </div>
+                <div style="height:6px; background:#f1f5f9; border-radius:9999px; overflow:hidden;">
+                  <div style="width:91%; height:100%; background:#f59e0b; border-radius:9999px;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:13px; font-weight:700; margin-bottom:6px;">
+                  <span>Node 04: Edge Triton Ingress Gateway</span>
+                  <span style="color:#10b981;">45% Load</span>
+                </div>
+                <div style="height:6px; background:#f1f5f9; border-radius:9999px; overflow:hidden;">
+                  <div style="width:45%; height:100%; background:#10b981; border-radius:9999px;"></div>
+                </div>
+              </div>
+
+              <div style="margin-top:10px; padding:12px; background:#f8fafc; border-radius:12px; font-size:12px; color:#475569; display:flex; justify-content:space-between; align-items:center;">
+                <span>Auto-Scaling GPU Allocation:</span>
+                <span style="font-weight:800; color:#0f172a;">Active (Max 64 Nodes)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enterprise Deployments Table -->
+        <div class="dash-card" style="margin-bottom:28px;" data-animate="fade-up">
+          <div class="dash-card-header">
+            <h2 class="dash-card-title">Live Enterprise Client Deployments</h2>
+            <div class="dash-card-actions">
+              <button class="btn-pill-dark" style="padding:6px 16px; font-size:12px;" onclick="alert('Exporting deployment telemetry CSV...')">Export CSV</button>
+            </div>
+          </div>
+          <div class="dash-table-wrap">
+            <table class="dash-table">
+              <thead>
+                <tr>
+                  <th>Client Organization</th>
+                  <th>Model Topology</th>
+                  <th>Current Throughput</th>
+                  <th>Subscription Tier</th>
+                  <th>SLA Latency</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>GlobalRoute Logistics</strong></td>
+                  <td>Dynamic Route Optimizer v3.4</td>
+                  <td>8,400 req/s</td>
+                  <td>Enterprise Dedicated</td>
+                  <td>11.2 ms</td>
+                  <td><span class="status-pill success">Operational</span></td>
+                  <td><button class="btn-copy-code" style="padding:4px 8px; border:1px solid #e2e8f0; border-radius:6px; font-size:11px;" data-copy="curl https://api.stackly.ai/v1/clusters/gr-prod">Inspect</button></td>
+                </tr>
+                <tr>
+                  <td><strong>FinEdge Capital</strong></td>
+                  <td>Neural Fraud Shield v2.1</td>
+                  <td>14,200 req/s</td>
+                  <td>Enterprise Platinum</td>
+                  <td>8.6 ms</td>
+                  <td><span class="status-pill success">Operational</span></td>
+                  <td><button class="btn-copy-code" style="padding:4px 8px; border:1px solid #e2e8f0; border-radius:6px; font-size:11px;" data-copy="curl https://api.stackly.ai/v1/clusters/fe-prod">Inspect</button></td>
+                </tr>
+                <tr>
+                  <td><strong>NovaTech Healthcare</strong></td>
+                  <td>Clinical NLP &amp; Diagnostic Vision</td>
+                  <td>2,100 req/s</td>
+                  <td>HIPAA Custom VPC</td>
+                  <td>22.4 ms</td>
+                  <td><span class="status-pill success">Operational</span></td>
+                  <td><button class="btn-copy-code" style="padding:4px 8px; border:1px solid #e2e8f0; border-radius:6px; font-size:11px;" data-copy="curl https://api.stackly.ai/v1/clusters/nv-prod">Inspect</button></td>
+                </tr>
+                <tr>
+                  <td><strong>Apex Retailers Global</strong></td>
+                  <td>Predictive Basket LLM</td>
+                  <td>4,800 req/s</td>
+                  <td>Scale Tier Pod</td>
+                  <td>14.8 ms</td>
+                  <td><span class="status-pill warning">High Concurrency</span></td>
+                  <td><button class="btn-copy-code" style="padding:4px 8px; border:1px solid #e2e8f0; border-radius:6px; font-size:11px;" data-copy="curl https://api.stackly.ai/v1/clusters/ap-prod">Inspect</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Security & Audit Log Feed -->
+        <div class="dash-card" data-animate="fade-up">
+          <div class="dash-card-header">
+            <h2 class="dash-card-title">Real-time Platform Audit Log</h2>
+            <span class="status-pill success">Live Telemetry</span>
+          </div>
+          <div class="dash-card-body" style="padding:16px 26px;">
+            <div style="display:flex; flex-direction:column; gap:12px; font-size:13px;">
+              <div style="display:flex; align-items:center; justify-content:space-between; padding-bottom:10px; border-bottom:1px solid #f8fafc;">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <span style="color:#10b981; font-weight:800;">[INFO]</span>
+                  <span>TLS 1.3 automated certificate renewal successful for <strong>ingress.stackly.ai</strong></span>
+                </div>
+                <span style="color:#94a3b8; font-size:12px;">2 mins ago</span>
+              </div>
+              <div style="display:flex; align-items:center; justify-content:space-between; padding-bottom:10px; border-bottom:1px solid #f8fafc;">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <span style="color:#3b82f6; font-weight:800;">[DEPLOY]</span>
+                  <span>New checkpoint <strong>stackly-vision-vit-large</strong> promoted to production cluster</span>
+                </div>
+                <span style="color:#94a3b8; font-size:12px;">14 mins ago</span>
+              </div>
+              <div style="display:flex; align-items:center; justify-content:space-between; padding-bottom:10px; border-bottom:1px solid #f8fafc;">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <span style="color:#f59e0b; font-weight:800;">[WARN]</span>
+                  <span>AP-Singapore node load exceeded 90% — auto-spawned 2 fallback GPU replicas</span>
+                </div>
+                <span style="color:#94a3b8; font-size:12px;">38 mins ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

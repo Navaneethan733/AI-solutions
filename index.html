@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACKLY - Artificial Intelligence Solutions & Automation Agency</title>
+  <meta name="description" content="STACKLY empowers business transformation through unique fundamental AI solutions. Unlock the ultimate power of AI in your real life.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Navigation Header
+       ========================================================================= -->
+  <header class="header-wrapper">
+    <nav class="navbar" id="navbar">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo" aria-label="STACKLY Home">
+        <img src="assets/images/Logo.webp" alt="STACKLY" class="brand-logo-img">
+      </a>
+
+      <!-- Pill Nav Menu -->
+      <div class="nav-pill-group">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Service</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+
+      <!-- Action Button -->
+      <a href="login.html" class="btn-get-started">Login</a>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="alert('Menu clicked!')"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </nav>
+  </header>
+
+  <!-- =========================================================================
+       Hero Bento Grid Section
+       ========================================================================= -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Hero Card 1 (Left White Card) -->
+        <div class="hero-card-left" data-animate="fade-left">
+          <h1 class="hero-title">Unlock the ultimate power of AI, in your real life</h1>
+          
+          <div class="hero-bottom-content-row">
+            <div class="hero-bottom-text-col">
+              <p class="hero-desc">
+                Duis aute irure dolor in reprehenderit in voluptate officia esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, nemo enim voluptatem quia voluptas sit aspernatur
+              </p>
+              <div class="hero-cta-wrap">
+                <a href="404.html" class="btn-pill-dark">
+                  <span>Discover More</span>
+                  <span class="btn-arrow">▶</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- 3D Robot Hand Graphic -->
+          <img src="assets/images/robot_hand.webp" alt="3D Futuristic Robotic Hand" class="robot-hand-img">
+        </div>
+
+        <!-- Hero Center Column -->
+        <div class="hero-center-col">
+          <!-- AI Neuro Consulting Card -->
+          <div class="hero-ai-card" data-animate="scale-up" class="delay-100">
+            <div class="ai-logo-art">ai</div>
+            <h3 class="ai-card-title">Discover future business with AI Neuro consulting</h3>
+            <a href="404.html" class="btn-pill-white">
+              <span>Discover More</span>
+              <span style="font-size: 10px;">▶</span>
+            </a>
+          </div>
+
+          <!-- Stats & Social Proof Card -->
+          <div class="hero-stats-card" data-animate="scale-up" class="delay-200">
+            <div class="avatar-stack">
+              <img src="assets/images/avatar1.webp" alt="Client Avatar 1">
+              <img src="assets/images/avatar2.webp" alt="Client Avatar 2">
+              <img src="assets/images/avatar3.webp" alt="Client Avatar 3">
+              <div class="avatar-more-btn">+</div>
+            </div>
+            <div class="stat-number animate-counter" data-target="15" data-suffix="k+">0k+</div>
+            <p class="stat-label">Happy clients and successful transactions</p>
+          </div>
+        </div>
+
+        <!-- Hero Card Right (Robot in Desert) -->
+        <div class="hero-card-right" data-animate="fade-right" class="delay-300">
+          <img src="assets/images/hero_robot.webp" alt="STACKLY AI Bipedal Robot Exploring Landscape" class="robot-bg-img">
+          
+          <!-- Watch Video Floating Pill Badge -->
+          <div class="video-pill-badge" id="watchVideoBtn">
+            <div class="video-play-icon">▶</div>
+            <span>Watch Video</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Marquee Banner 1 (Dark Ribbon Streak)
+       ========================================================================= -->
+  <div class="marquee-container dark-ribbon" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-item">
+        <span>Artificial Intelligence in shaping the future of technology</span>
+        <span class="marquee-divider">/</span>
+        <span>Artificial Intelligence</span>
+        <span class="marquee-divider">/</span>
+        <span>Artificial Intelligence in shaping the future of technology</span>
+        <span class="marquee-divider">/</span>
+        <span>Artificial Intelligence</span>
+        <span class="marquee-divider">/</span>
+      </div>
+      <div class="marquee-item">
+        <span>Artificial Intelligence in shaping the future of technology</span>
+        <span class="marquee-divider">/</span>
+        <span>Artificial Intelligence</span>
+        <span class="marquee-divider">/</span>
+        <span>Artificial Intelligence in shaping the future of technology</span>
+        <span class="marquee-divider">/</span>
+        <span>Artificial Intelligence</span>
+        <span class="marquee-divider">/</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       Section 2: Agency Transformation & Showcase
+       ========================================================================= -->
+  <section class="agency-section" id="about">
+    <div class="container">
+      
+      <!-- Headline with inline image pills -->
+      <div class="agency-heading-wrap" data-animate="fade-up">
+        <h2 class="agency-title">
+          We're a full-service AI automation agency. We
+          <img src="assets/images/fiery_ribbon_bg.webp" alt="Energy" class="inline-pill-img">
+          We turn into business <span class="gradient-text-accent">AI-driven</span> industry leaders.
+          <img src="assets/images/fiery_ribbon_bg.webp" alt="Innovation" class="inline-pill-img">
+        </h2>
+      </div>
+
+      <!-- Main Dark Showcase Box -->
+      <div class="agency-showcase-box" data-animate="scale-up">
+        <!-- Left Column -->
+        <div class="agency-left-col">
+          <h3 class="agency-showcase-title">
+            Empowering business transformation through unique fundamental solutions.
+          </h3>
+          <a href="404.html" class="btn-pill-gradient">More Feature</a>
+
+          <div class="cyborg-graphic-wrap">
+            <img src="assets/images/ai_cyborg_face.webp" alt="AI Neural Android Interface" class="cyborg-face-img">
+          </div>
+
+          <!-- Feature Tag List Badge Overlay -->
+          <div class="agency-feature-tag-box">
+            <ul class="feature-tag-list">
+              <li class="feature-tag-item"><span>+</span> Artificial</li>
+              <li class="feature-tag-item"><span>+</span> Local Authority</li>
+              <li class="feature-tag-item"><span>+</span> Business Survey</li>
+              <li class="feature-tag-item"><span>+</span> Identity</li>
+              <li class="feature-tag-item"><span>+</span> Data Connection</li>
+              <li class="feature-tag-item"><span>+</span> Public Server</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Column (Stacked Cards) -->
+        <div class="agency-right-col">
+          <div class="feature-subcard" data-animate="fade-left" class="delay-100">
+            <h4 class="subcard-title">Networking</h4>
+            <p class="subcard-desc">
+              Duis aute irure dolor in reprehenderit in voluptate officia esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident,
+            </p>
+          </div>
+
+          <div class="feature-subcard" data-animate="fade-left" class="delay-200">
+            <h4 class="subcard-title">Algorithm</h4>
+            <p class="subcard-desc">
+              Duis aute irure dolor in reprehenderit in voluptate officia esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident,
+            </p>
+          </div>
+
+          <div class="feature-subcard" data-animate="fade-left" class="delay-300">
+            <h4 class="subcard-title">Integration</h4>
+            <p class="subcard-desc">
+              Duis aute irure dolor in reprehenderit in voluptate officia esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident,
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 3: Services (Watermarked Typography)
+       ========================================================================= -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <!-- Giant Watermark Typography -->
+      <div class="services-watermark-text" aria-hidden="true">
+        Serv<span class="stroke-text">ices</span>
+      </div>
+
+      <!-- Services 3-Column Grid -->
+      <div class="services-grid">
+        <!-- Service Card 01 -->
+        <div class="service-card" data-animate="fade-up" class="delay-100">
+          <div class="service-index">01</div>
+          <h3 class="service-name">Robotic Automation</h3>
+          <p class="service-desc">
+            Nemo enim ipsam voluptatem voluptas aspernatur au odit aut a consequuntur magni dolores eos qui ratione sequi the nesciunt. quisquam
+          </p>
+          <a href="404.html" class="service-arrow-btn" aria-label="Learn about Robotic Automation">↗</a>
+        </div>
+
+        <!-- Service Card 02 -->
+        <div class="service-card" data-animate="fade-up" class="delay-200">
+          <div class="service-index">02</div>
+          <h3 class="service-name">Machine learning</h3>
+          <p class="service-desc">
+            Nemo enim ipsam voluptatem voluptas aspernatur au odit aut a consequuntur magni dolores eos qui ratione sequi the nesciunt. quisquam
+          </p>
+          <a href="404.html" class="service-arrow-btn" aria-label="Learn about Machine Learning">↗</a>
+        </div>
+
+        <!-- Service Card 03 -->
+        <div class="service-card" data-animate="fade-up" class="delay-300">
+          <div class="service-index">03</div>
+          <h3 class="service-name">Education & Science</h3>
+          <p class="service-desc">
+            Nemo enim ipsam voluptatem voluptas aspernatur au odit aut a consequuntur magni dolores eos qui ratione sequi the nesciunt. quisquam
+          </p>
+          <a href="404.html" class="service-arrow-btn" aria-label="Learn about Education & Science">↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 4: Testimonials Banner
+       ========================================================================= -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="testimonials-banner" data-animate="scale-up">
+
+        <!-- Left White Quote Card -->
+        <div class="testimonial-quote-card" data-animate="fade-right">
+          <div class="quote-icon">❝</div>
+          <p class="quote-text">
+            Duis aute irure dolor in reprehenderit in voluptate cillum dolore excepteur sint occaecat non proident sunt in culpa qui officia deserunt mollit anim id est voluptatem quia voluptas
+          </p>
+          <div class="author-row">
+            <img src="assets/images/avatar1.webp" alt="John Anderson" class="author-avatar">
+            <div class="author-info">
+              <h4>John Anderson</h4>
+              <p>Founder</p>
+            </div>
+          </div>
+          <div class="carousel-dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+
+        <!-- Right Content & Stats -->
+        <div class="testimonial-right-col" data-animate="fade-left">
+          <div class="section-tag">// testimonials</div>
+          <h2 class="testimonial-heading">
+            What People Are Saying About STACKLY
+          </h2>
+          <div class="rating-badge-card">
+            <div class="rating-col">
+              <span class="rating-number animate-counter" data-target="4.8">0.0</span>
+              <span>Rating</span>
+            </div>
+            <div class="rating-separator"></div>
+            <div class="rating-col">
+              <span class="rating-number animate-counter" data-target="500" data-suffix="+">0+</span>
+              <span>Reviews</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Marquee Banner 2 (Vibrant Coral/Red Ribbon)
+       ========================================================================= -->
+  <div class="marquee-container coral-ribbon" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-item">
+        <span>Artificial Intelligence in Shaping the Future of Technology.</span>
+        <span class="marquee-divider">/</span>
+        <span>Artificial Intelligence in Shaping the Future of Technology.</span>
+        <span class="marquee-divider">/</span>
+        <span>Artificial Intelligence in Shaping the Future of Technology.</span>
+        <span class="marquee-divider">/</span>
+      </div>
+      <div class="marquee-item">
+        <span>Artificial Intelligence in Shaping the Future of Technology.</span>
+        <span class="marquee-divider">/</span>
+        <span>Artificial Intelligence in Shaping the Future of Technology.</span>
+        <span class="marquee-divider">/</span>
+        <span>Artificial Intelligence in Shaping the Future of Technology.</span>
+        <span class="marquee-divider">/</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       Section 5: Pioneering Projects
+       ========================================================================= -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      
+      <!-- Section Header Row -->
+      <div class="projects-header-row" data-animate="fade-up">
+        <div class="projects-header-left">
+          <div class="section-tag" style="color: #64748b;">// projects</div>
+          <h2 class="projects-title">Pioneering Projects for Intelligent Solutions</h2>
+          <a href="404.html" class="btn-pill-dark">
+            <span>Explore More</span>
+            <span class="btn-arrow">▶</span>
+          </a>
+        </div>
+        <div class="projects-header-right">
+          <div class="big-stat-number animate-counter" data-target="49" data-suffix="+">0+</div>
+          <div class="big-stat-label">Completed projects</div>
+        </div>
+      </div>
+
+      <!-- Projects 3-Card Grid -->
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-animate="fade-up" class="delay-100">
+          <img src="assets/images/project_brain.webp" alt="AI Solution for Precision Agriculture" class="project-img">
+          <div class="project-pill-label">
+            Build an AI Solution for Precision Agriculture
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-animate="fade-up" class="delay-200">
+          <img src="assets/images/project_hands.webp" alt="Content Generation System That Uses AI" class="project-img">
+          <div class="project-pill-label">
+            Develop a Content Generation System That Uses AI
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-animate="fade-up" class="delay-300">
+          <img src="assets/images/project_chip.webp" alt="AI for Large Corporations and Businesses" class="project-img">
+          <div class="project-pill-label">
+            AI for large corporations and businesses across industries
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 6: Why Choose Us (Dark Box)
+       ========================================================================= -->
+  <section class="why-us-section" id="why-us">
+    <div class="container">
+      <div class="why-us-box" data-animate="scale-up">
+        
+        <!-- Top Row -->
+        <div class="why-us-top-row">
+          <div class="why-us-left">
+            <div class="section-tag">// why choose us</div>
+            <h2 class="why-us-title">
+              You can discover why we're your top choice for artificial intelligence services.
+            </h2>
+            <a href="404.html" class="btn-pill-coral">Explore More</a>
+          </div>
+          <div class="why-us-right">
+            <div class="why-us-img-frame">
+              <img src="assets/images/abstract_fractal.webp" alt="Vibrant 3D AI Ribbon Geometry">
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Stats Row -->
+        <div class="why-us-stats-row">
+          <div class="why-stat-card" data-animate="fade-up" class="delay-100">
+            <div class="why-stat-number animate-counter" data-target="93" data-suffix="+">0+</div>
+            <div class="why-stat-label">Projects completed</div>
+          </div>
+
+          <div class="why-stat-card" data-animate="fade-up" class="delay-200">
+            <div class="why-stat-number animate-counter" data-target="99" data-suffix="%">0%</div>
+            <div class="why-stat-label">Satisfied customers</div>
+          </div>
+
+          <div class="why-stat-card" data-animate="fade-up" class="delay-300">
+            <div class="why-stat-number animate-counter" data-target="60" data-suffix="k">0k</div>
+            <div class="why-stat-label">Saved per month</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 7: Social Proof & Partner Logos
+       ========================================================================= -->
+  <section class="social-proof-section">
+    <div class="container">
+      <h2 class="social-proof-title" data-animate="fade-up">
+        Five million companies are using STACKLY to power up their AI systems worldwide.
+      </h2>
+
+      <!-- Partner Logos Infinite Marquee -->
+      <div class="logos-marquee-wrapper" data-animate="fade-up">
+        <div class="logos-marquee-track">
+          <!-- Loop 1 -->
+          <div class="partner-logo-card">
+            <svg viewBox="0 0 120 30" fill="currentColor">
+              <circle cx="15" cy="15" r="8" fill="#111"></circle>
+              <text x="32" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" fill="#111">logoipsum</text>
+            </svg>
+          </div>
+
+          <div class="partner-logo-card">
+            <svg viewBox="0 0 120 30" fill="currentColor">
+              <rect x="8" y="8" width="14" height="14" rx="4" fill="#111"></rect>
+              <text x="32" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" fill="#111">logoipsum'</text>
+            </svg>
+          </div>
+
+          <div class="partner-logo-card">
+            <svg viewBox="0 0 120 30" fill="currentColor">
+              <ellipse cx="60" cy="15" rx="36" ry="12" fill="#111"></ellipse>
+              <text x="38" y="19" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="10" fill="#fff">logoipsum</text>
+            </svg>
+          </div>
+
+          <div class="partner-logo-card">
+            <svg viewBox="0 0 120 30" fill="currentColor">
+              <path d="M10 15a6 6 0 1 0 12 0a6 6 0 1 0-12 0z" fill="#111"></path>
+              <circle cx="16" cy="15" r="2.5" fill="#fff"></circle>
+              <text x="32" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" fill="#111">Logoipsum</text>
+            </svg>
+          </div>
+
+          <div class="partner-logo-card">
+            <svg viewBox="0 0 120 30" fill="currentColor">
+              <rect x="10" y="9" width="12" height="12" transform="rotate(45 16 15)" fill="#111"></rect>
+              <text x="32" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" fill="#111">Logoipsum</text>
+            </svg>
+          </div>
+
+          <div class="partner-logo-card">
+            <svg viewBox="0 0 120 30" fill="currentColor">
+              <rect x="8" y="8" width="14" height="14" rx="4" fill="#111"></rect>
+              <text x="32" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" fill="#111">logoipsum'</text>
+            </svg>
+          </div>
+
+          <div class="partner-logo-card">
+            <svg viewBox="0 0 120 30" fill="currentColor">
+              <ellipse cx="60" cy="15" rx="36" ry="12" fill="#111"></ellipse>
+              <text x="38" y="19" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="10" fill="#fff">logoipsum</text>
+            </svg>
+          </div>
+
+          <div class="partner-logo-card">
+            <svg viewBox="0 0 120 30" fill="currentColor">
+              <path d="M10 15a6 6 0 1 0 12 0a6 6 0 1 0-12 0z" fill="#111"></path>
+              <circle cx="16" cy="15" r="2.5" fill="#fff"></circle>
+              <text x="32" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" fill="#111">Log</text>
+            </svg>
+          </div>
+
+          <!-- Loop 2 (Exact Duplicate for Infinite Continuous Scroll) -->
+          <div class="partner-logo-card">
+            <svg viewBox="0 0 120 30" fill="currentColor">
+              <circle cx="15" cy="15" r="8" fill="#111"></circle>
+              <text x="32" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" fill="#111">logoipsum</text>
+            </svg>
+          </div>
+
+          <div class="partner-logo-card">
+            <svg viewBox="0 0 120 30" fill="currentColor">
+              <rect x="8" y="8" width="14" height="14" rx="4" fill="#111"></rect>
+              <text x="32" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" fill="#111">logoipsum'</text>
+            </svg>
+          </div>
+
+          <div class="partner-logo-card">
+            <svg viewBox="0 0 120 30" fill="currentColor">
+              <ellipse cx="60" cy="15" rx="36" ry="12" fill="#111"></ellipse>
+              <text x="38" y="19" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="10" fill="#fff">logoipsum</text>
+            </svg>
+          </div>
+
+          <div class="partner-logo-card">
+            <svg viewBox="0 0 120 30" fill="currentColor">
+              <path d="M10 15a6 6 0 1 0 12 0a6 6 0 1 0-12 0z" fill="#111"></path>
+              <circle cx="16" cy="15" r="2.5" fill="#fff"></circle>
+              <text x="32" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" fill="#111">Logoipsum</text>
+            </svg>
+          </div>
+
+          <div class="partner-logo-card">
+            <svg viewBox="0 0 120 30" fill="currentColor">
+              <rect x="10" y="9" width="12" height="12" transform="rotate(45 16 15)" fill="#111"></rect>
+              <text x="32" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" fill="#111">Logoipsum</text>
+            </svg>
+          </div>
+
+          <div class="partner-logo-card">
+            <svg viewBox="0 0 120 30" fill="currentColor">
+              <rect x="8" y="8" width="14" height="14" rx="4" fill="#111"></rect>
+              <text x="32" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" fill="#111">logoipsum'</text>
+            </svg>
+          </div>
+
+          <div class="partner-logo-card">
+            <svg viewBox="0 0 120 30" fill="currentColor">
+              <ellipse cx="60" cy="15" rx="36" ry="12" fill="#111"></ellipse>
+              <text x="38" y="19" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="10" fill="#fff">logoipsum</text>
+            </svg>
+          </div>
+
+          <div class="partner-logo-card">
+            <svg viewBox="0 0 120 30" fill="currentColor">
+              <path d="M10 15a6 6 0 1 0 12 0a6 6 0 1 0-12 0z" fill="#111"></path>
+              <circle cx="16" cy="15" r="2.5" fill="#fff"></circle>
+              <text x="32" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" fill="#111">Log</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 8: FAQ (Asked Questions)
+       ========================================================================= -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="faq-card-container" data-animate="scale-up">
+        
+        <!-- Left Column: Accordion -->
+        <div class="faq-left-col">
+          <div class="section-tag" style="color: #64748b;">// asked questions</div>
+          <h2 class="faq-title">
+            Easily add intelligence to your application or server.
+          </h2>
+
+          <div class="faq-accordion">
+            <!-- FAQ 1 -->
+            <div class="faq-item active">
+              <div class="faq-header">
+                <span class="faq-question">What is Artificial Intelligence?</span>
+                <span class="faq-icon">▲</span>
+              </div>
+              <div class="faq-body">
+                <p class="faq-answer">
+                  Artificial Intelligence is the simulation of human intelligence by software and machines, enabling autonomous reasoning, perception, machine learning, and rapid problem-solving.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+              <div class="faq-header">
+                <span class="faq-question">What industries do you cater to?</span>
+                <span class="faq-icon">▲</span>
+              </div>
+              <div class="faq-body">
+                <p class="faq-answer">
+                  We empower enterprises in healthcare, fintech, precision agriculture, e-commerce, legal operations, logistics, and automated cloud computing.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+              <div class="faq-header">
+                <span class="faq-question">How does Machine Learning relate to Artificial Intelligence?</span>
+                <span class="faq-icon">▲</span>
+              </div>
+              <div class="faq-body">
+                <p class="faq-answer">
+                  Machine learning is a subset of AI focused on training statistical neural networks on large datasets to recognize patterns, make predictions, and continuously self-improve without explicit hardcoded instructions.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+              <div class="faq-header">
+                <span class="faq-question">Why Need Marketing Data Analysis ?</span>
+                <span class="faq-icon">▲</span>
+              </div>
+              <div class="faq-body">
+                <p class="faq-answer">
+                  Marketing data analysis leverages predictive AI models to detect high-intent audience segments, optimize multi-channel budget allocation, and maximize user conversion velocity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: 3D Cyber Head & Pill Notch -->
+        <div class="faq-right-col" data-animate="fade-left">
+          <div class="faq-img-card">
+            <img src="assets/images/ai_cyborg_face.webp" alt="STACKLY AI Biomechanical Intelligence Unit">
+            <!-- Pill Notch Button -->
+            <a href="404.html" class="faq-pill-badge">
+              <span>Explore more</span>
+              <span style="font-size: 10px;">▶</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 9: Newsletter Subscription Banner
+       ========================================================================= -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-banner" data-animate="scale-up">
+        
+        <!-- Left Column: Form -->
+        <div class="newsletter-left-col">
+          <h2 class="newsletter-title">
+            Subscribe for the latest updates & insights.
+          </h2>
+          <p class="newsletter-desc">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse dolore eu fugiat nulla pariatur. excepteur sint occaecat
+          </p>
+
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to STACKLY insights!');">
+            <input type="email" placeholder="Email" class="newsletter-input" required>
+            <button type="submit" class="btn-subscribe">SUBSCRIBE</button>
+          </form>
+        </div>
+
+        <!-- Right Column: 3D Floating Isometric Tiles -->
+        <div class="newsletter-right-col" data-animate="fade-left">
+          <div class="tiles-iso-grid">
+            <div class="iso-tile">
+              <img src="assets/images/newsletter_vr1.webp" alt="VR Neural Experience">
+            </div>
+            <div class="iso-tile">
+              <img src="assets/images/newsletter_tile3.webp" alt="3D Modern Intelligence Architecture">
+            </div>
+            <div class="iso-tile">
+              <img src="assets/images/newsletter_vr2.webp" alt="Autonomous Cyber Interaction">
+            </div>
+            <div class="iso-tile">
+              <img src="assets/images/newsletter_tile4.webp" alt="Dynamic 3D Geometry">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Footer Section
+       ========================================================================= -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/images/Logo.webp" alt="STACKLY" class="footer-brand-logo">
+          <p class="footer-desc">
+            Empowering modern businesses with artificial intelligence, intelligent process automation, and neuro-consulting models.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="404.html">Robotic Automation</a></li>
+            <li><a href="404.html">Machine Learning</a></li>
+            <li><a href="404.html">Algorithm Engineering</a></li>
+            <li><a href="404.html">Cloud Integration</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-links">
+            <li>stackly@info.in</li>
+            <li>9876543210</li>
+            <li>123 Salem, Tamilnadu, India</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 STACKLY AI Solutions Inc. All rights reserved.</p>
+        <p>Crafted for Next-Gen Autonomous Intelligence</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Video Player Modal
+       ========================================================================= -->
+  <div class="video-modal" id="videoModal">
+    <div class="video-modal-content">
+      <button class="video-modal-close" aria-label="Close video modal">✕</button>
+      <div class="video-wrapper">
+        <iframe id="videoIframe" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
