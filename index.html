@@ -10,6 +10,24 @@
 <body>
 
   <!-- =========================================================================
+       Preloader
+       ========================================================================= -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <img src="assets/images/Logo.webp" alt="STACKLY">
+      </div>
+      <div class="preloader-bar-track">
+        <div class="preloader-bar-fill"></div>
+      </div>
+      <p class="preloader-label">Initializing AI Systems...</p>
+    </div>
+    <div class="preloader-bg-orb orb-1"></div>
+    <div class="preloader-bg-orb orb-2"></div>
+    <div class="preloader-bg-orb orb-3"></div>
+  </div>
+
+  <!-- =========================================================================
        Navigation Header
        ========================================================================= -->
   <header class="header-wrapper">
@@ -746,5 +764,39 @@
   </div>
 
   <script src="script.js"></script>
+  <script>
+    // Preloader dismiss
+    (function() {
+      const preloader = document.getElementById('preloader');
+      const messages = [
+        'Initializing AI Systems...',
+        'Loading Neural Networks...',
+        'Calibrating Models...',
+        'Almost Ready...'
+      ];
+      const label = preloader.querySelector('.preloader-label');
+      let idx = 0;
+      const msgInterval = setInterval(() => {
+        idx = (idx + 1) % messages.length;
+        label.style.opacity = '0';
+        setTimeout(() => {
+          label.textContent = messages[idx];
+          label.style.opacity = '1';
+        }, 200);
+      }, 900);
+
+      function hidePreloader() {
+        clearInterval(msgInterval);
+        preloader.classList.add('preloader--hidden');
+        setTimeout(() => { preloader.style.display = 'none'; }, 700);
+      }
+
+      if (document.readyState === 'complete') {
+        setTimeout(hidePreloader, 500);
+      } else {
+        window.addEventListener('load', () => setTimeout(hidePreloader, 400));
+      }
+    })();
+  </script>
 </body>
 </html>
