@@ -1688,6 +1688,63 @@ button {
   font-size: 13px;
 }
 
+/* Footer Social Icons */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.25s ease, background 0.25s ease, border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.footer-social-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.footer-social-link[aria-label="LinkedIn"]:hover {
+  color: #0a66c2;
+  background: rgba(10, 102, 194, 0.15);
+  border-color: rgba(10, 102, 194, 0.4);
+}
+
+.footer-social-link[aria-label="X (Twitter)"]:hover {
+  color: #e7e9ea;
+  background: rgba(231, 233, 234, 0.1);
+  border-color: rgba(231, 233, 234, 0.3);
+}
+
+.footer-social-link[aria-label="Facebook"]:hover {
+  color: #1877f2;
+  background: rgba(24, 119, 242, 0.15);
+  border-color: rgba(24, 119, 242, 0.4);
+}
+
+.footer-social-link[aria-label="Instagram"]:hover {
+  color: #e1306c;
+  background: rgba(225, 48, 108, 0.15);
+  border-color: rgba(225, 48, 108, 0.4);
+}
+
+.footer-social-link[aria-label="YouTube"]:hover {
+  color: #ff0000;
+  background: rgba(255, 0, 0, 0.12);
+  border-color: rgba(255, 0, 0, 0.35);
+}
+
+
 /* ==========================================================================
    Scroll Reveal Animations
    ========================================================================== */
