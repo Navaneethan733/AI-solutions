@@ -10,21 +10,78 @@
 <body>
 
   <!-- =========================================================================
-       Preloader
+       Preloader (Futuristic AI Neural Core)
        ========================================================================= -->
-  <div id="preloader" class="preloader">
-    <div class="preloader-inner">
-      <div class="preloader-logo">
-        <img src="assets/images/Logo.webp" alt="STACKLY">
-      </div>
-      <div class="preloader-bar-track">
-        <div class="preloader-bar-fill"></div>
-      </div>
-      <p class="preloader-label">Initializing AI Systems...</p>
-    </div>
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <!-- Cyber Grid Background & Ambient Lighting -->
+    <div class="preloader-grid-bg"></div>
     <div class="preloader-bg-orb orb-1"></div>
     <div class="preloader-bg-orb orb-2"></div>
     <div class="preloader-bg-orb orb-3"></div>
+
+    <div class="preloader-card">
+      <!-- Cyber HUD Corner Accents -->
+      <div class="hud-corner top-left"></div>
+      <div class="hud-corner top-right"></div>
+      <div class="hud-corner bottom-left"></div>
+      <div class="hud-corner bottom-right"></div>
+
+      <!-- Top HUD Header -->
+      <div class="preloader-hud-header">
+        <div class="hud-status-badge">
+          <span class="status-pulse-dot"></span>
+          <span class="hud-status-text">NEURAL CORE ACTIVE</span>
+        </div>
+        <div class="hud-sys-tag">SYS // V4.2</div>
+      </div>
+
+      <!-- Center Holographic AI Reactor -->
+      <div class="preloader-reactor">
+        <div class="reactor-ring ring-outer"></div>
+        <div class="reactor-ring ring-mid"></div>
+        <div class="reactor-ring ring-inner"></div>
+        <div class="reactor-orbit-dot dot-1"></div>
+        <div class="reactor-orbit-dot dot-2"></div>
+        <div class="reactor-core">
+          <div class="laser-scanner"></div>
+          <div class="preloader-logo">
+            <img src="assets/images/Logo.webp" alt="STACKLY">
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress Section -->
+      <div class="preloader-progress-wrap">
+        <div class="preloader-progress-info">
+          <div class="preloader-log-line">
+            <span class="log-cursor">&gt;</span>
+            <span class="preloader-label" id="preloader-label">Initializing Neural Matrix...</span>
+          </div>
+          <div class="preloader-counter-wrap">
+            <span class="preloader-counter" id="preloader-counter">00</span><span class="counter-percent">%</span>
+          </div>
+        </div>
+
+        <!-- High-Tech Progress Bar -->
+        <div class="preloader-bar-track">
+          <div class="preloader-bar-fill" id="preloader-bar-fill">
+            <div class="bar-spark"></div>
+          </div>
+        </div>
+
+        <!-- Bottom Data Activity Ticker & Equalizer Bars -->
+        <div class="preloader-hud-footer">
+          <div class="hud-equalizer">
+            <span class="eq-bar"></span>
+            <span class="eq-bar"></span>
+            <span class="eq-bar"></span>
+            <span class="eq-bar"></span>
+            <span class="eq-bar"></span>
+          </div>
+          <div class="hud-telemetry" id="preloader-telemetry">MEM 128TB // SYNAPSE 99.8% // ONLINE</div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- =========================================================================
@@ -71,7 +128,7 @@
                 Duis aute irure dolor in reprehenderit in voluptate officia esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, nemo enim voluptatem quia voluptas sit aspernatur
               </p>
               <div class="hero-cta-wrap">
-                <a href="404.html" class="btn-pill-dark">
+                <a href="services.html" class="btn-pill-dark">
                   <span>Discover More</span>
                   <span class="btn-arrow">▶</span>
                 </a>
@@ -88,7 +145,7 @@
           <div class="hero-ai-card" data-animate="scale-up" class="delay-100">
             <div class="ai-logo-art">ai</div>
             <h3 class="ai-card-title">Discover future business with AI Neuro consulting</h3>
-            <a href="404.html" class="btn-pill-white">
+            <a href="about.html" class="btn-pill-white">
               <span>Discover More</span>
               <span style="font-size: 10px;">▶</span>
             </a>
@@ -173,7 +230,7 @@
           <h3 class="agency-showcase-title">
             Empowering business transformation through unique fundamental solutions.
           </h3>
-          <a href="404.html" class="btn-pill-gradient">More Feature</a>
+          <a href="services.html" class="btn-pill-gradient">More Feature</a>
 
           <div class="cyborg-graphic-wrap">
             <img src="assets/images/ai_cyborg_face.webp" alt="AI Neural Android Interface" class="cyborg-face-img">
@@ -239,7 +296,7 @@
           <p class="service-desc">
             Nemo enim ipsam voluptatem voluptas aspernatur au odit aut a consequuntur magni dolores eos qui ratione sequi the nesciunt. quisquam
           </p>
-          <a href="404.html" class="service-arrow-btn" aria-label="Learn about Robotic Automation">↗</a>
+          <a href="services.html" class="service-arrow-btn" aria-label="Learn about Robotic Automation">↗</a>
         </div>
 
         <!-- Service Card 02 -->
@@ -249,7 +306,7 @@
           <p class="service-desc">
             Nemo enim ipsam voluptatem voluptas aspernatur au odit aut a consequuntur magni dolores eos qui ratione sequi the nesciunt. quisquam
           </p>
-          <a href="404.html" class="service-arrow-btn" aria-label="Learn about Machine Learning">↗</a>
+          <a href="services.html" class="service-arrow-btn" aria-label="Learn about Machine Learning">↗</a>
         </div>
 
         <!-- Service Card 03 -->
@@ -259,7 +316,7 @@
           <p class="service-desc">
             Nemo enim ipsam voluptatem voluptas aspernatur au odit aut a consequuntur magni dolores eos qui ratione sequi the nesciunt. quisquam
           </p>
-          <a href="404.html" class="service-arrow-btn" aria-label="Learn about Education & Science">↗</a>
+          <a href="services.html" class="service-arrow-btn" aria-label="Learn about Education & Science">↗</a>
         </div>
       </div>
     </div>
@@ -350,7 +407,7 @@
         <div class="projects-header-left">
           <div class="section-tag" style="color: #64748b;">// projects</div>
           <h2 class="projects-title">Pioneering Projects for Intelligent Solutions</h2>
-          <a href="404.html" class="btn-pill-dark">
+          <a href="services.html" class="btn-pill-dark">
             <span>Explore More</span>
             <span class="btn-arrow">▶</span>
           </a>
@@ -405,7 +462,7 @@
             <h2 class="why-us-title">
               You can discover why we're your top choice for artificial intelligence services.
             </h2>
-            <a href="404.html" class="btn-pill-coral">Explore More</a>
+            <a href="about.html" class="btn-pill-coral">Explore More</a>
           </div>
           <div class="why-us-right">
             <div class="why-us-img-frame">
@@ -645,7 +702,7 @@
           <div class="faq-img-card">
             <img src="assets/images/ai_cyborg_face.webp" alt="STACKLY AI Biomechanical Intelligence Unit">
             <!-- Pill Notch Button -->
-            <a href="404.html" class="faq-pill-badge">
+            <a href="contact.html" class="faq-pill-badge">
               <span>Explore more</span>
               <span style="font-size: 10px;">▶</span>
             </a>
@@ -672,9 +729,20 @@
             Duis aute irure dolor in reprehenderit in voluptate velit esse dolore eu fugiat nulla pariatur. excepteur sint occaecat
           </p>
 
-          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to STACKLY insights!');">
-            <input type="email" placeholder="Email" class="newsletter-input" required>
-            <button type="submit" class="btn-subscribe">SUBSCRIBE</button>
+          <form class="newsletter-form" id="newsletter-form" action="javascript:void(0)" onsubmit="
+            event.preventDefault();
+            var btn = document.getElementById('newsletter-submit-btn');
+            var inp = document.getElementById('newsletter-email-input');
+            if (!inp.value || !inp.checkValidity()) { inp.reportValidity(); return false; }
+            btn.disabled = true;
+            btn.textContent = 'Subscribing...';
+            setTimeout(function(){
+              window.location.href = '404.html';
+            }, 700);
+            return false;
+          ">
+            <input type="email" placeholder="Email" class="newsletter-input" id="newsletter-email-input" required>
+            <button type="submit" class="btn-subscribe" id="newsletter-submit-btn">SUBSCRIBE</button>
           </form>
         </div>
 
@@ -744,10 +812,10 @@
         <div class="footer-col">
           <h4>Solutions</h4>
           <ul class="footer-links">
-            <li><a href="services.html#core-services">Robotic Automation</a></li>
-            <li><a href="services.html#core-services">Machine Learning</a></li>
-            <li><a href="services.html#core-services">Algorithm Engineering</a></li>
-            <li><a href="services.html#core-services">Cloud Integration</a></li>
+            <li><a href="404.html">Robotic Automation</a></li>
+            <li><a href="404.html">Machine Learning</a></li>
+            <li><a href="404.html">Algorithm Engineering</a></li>
+            <li><a href="404.html">Cloud Integration</a></li>
           </ul>
         </div>
 
@@ -782,36 +850,72 @@
 
   <script src="script.js"></script>
   <script>
-    // Preloader dismiss
+    // Futuristic AI Preloader Sequence
     (function() {
       const preloader = document.getElementById('preloader');
-      const messages = [
-        'Initializing AI Systems...',
-        'Loading Neural Networks...',
-        'Calibrating Models...',
-        'Almost Ready...'
-      ];
-      const label = preloader.querySelector('.preloader-label');
-      let idx = 0;
-      const msgInterval = setInterval(() => {
-        idx = (idx + 1) % messages.length;
-        label.style.opacity = '0';
-        setTimeout(() => {
-          label.textContent = messages[idx];
-          label.style.opacity = '1';
-        }, 200);
-      }, 900);
+      if (!preloader) return;
 
-      function hidePreloader() {
-        clearInterval(msgInterval);
-        preloader.classList.add('preloader--hidden');
-        setTimeout(() => { preloader.style.display = 'none'; }, 700);
+      const label = document.getElementById('preloader-label');
+      const counter = document.getElementById('preloader-counter');
+      const barFill = document.getElementById('preloader-bar-fill');
+      const telemetry = document.getElementById('preloader-telemetry');
+      const statusText = preloader.querySelector('.hud-status-text');
+
+      const stages = [
+        { pct: 22, label: 'Initializing Neural Matrix...', telemetry: 'MEM 32TB // ALLOCATING WEIGHTS' },
+        { pct: 52, label: 'Calibrating Deep Synapse Agents...', telemetry: 'SYNAPSE 68.4% // MULTI-THREADED' },
+        { pct: 80, label: 'Optimizing Quantum AI Models...', telemetry: 'TENSOR CORES // 96.2% EFFICIENCY' },
+        { pct: 95, label: 'Synchronizing Interface Nodes...', telemetry: 'SECURITY PROTOCOLS // VERIFIED' },
+        { pct: 100, label: 'Neural Core Ready // Welcome', telemetry: 'ALL SYSTEMS NOMINAL // ONLINE' }
+      ];
+
+      let progress = 0;
+      let stageIdx = 0;
+      let isLoaded = false;
+      let finished = false;
+
+      function updateUI(val) {
+        if (counter) counter.textContent = String(Math.floor(val)).padStart(2, '0');
+        if (barFill) barFill.style.width = val + '%';
+
+        while (stageIdx < stages.length && val >= stages[stageIdx].pct) {
+          if (label) label.textContent = stages[stageIdx].label;
+          if (telemetry) telemetry.textContent = stages[stageIdx].telemetry;
+          stageIdx++;
+        }
+      }
+
+      const timer = setInterval(() => {
+        if (finished) return;
+
+        // Smooth high-tech progression
+        const increment = isLoaded ? (progress < 70 ? 2.2 : 1.6) : (progress < 60 ? 1.3 : 0.85);
+        progress = Math.min(100, progress + increment);
+        updateUI(progress);
+
+        if (progress >= 100) {
+          finished = true;
+          clearInterval(timer);
+          if (statusText) statusText.textContent = 'SYSTEMS ONLINE';
+          preloader.classList.add('preloader--ready');
+
+          setTimeout(() => {
+            preloader.classList.add('preloader--hidden');
+            setTimeout(() => {
+              preloader.style.display = 'none';
+            }, 650);
+          }, 350);
+        }
+      }, 25);
+
+      function triggerFinish() {
+        isLoaded = true;
       }
 
       if (document.readyState === 'complete') {
-        setTimeout(hidePreloader, 500);
+        setTimeout(triggerFinish, 500);
       } else {
-        window.addEventListener('load', () => setTimeout(hidePreloader, 400));
+        window.addEventListener('load', () => setTimeout(triggerFinish, 400));
       }
     })();
   </script>

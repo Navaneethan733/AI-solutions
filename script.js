@@ -578,7 +578,7 @@ document.addEventListener('DOMContentLoaded', () => {
           signupFeedback.textContent = 'Account created successfully! Welcome to STACKLY AI.';
         }
         setTimeout(() => {
-          window.location.href = 'index.html';
+          window.location.href = 'user-dashboard.html';
         }, 1500);
       }, 1000);
     });
